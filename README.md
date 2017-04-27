@@ -23,7 +23,7 @@ More details: https://forum.openwrt.org/viewtopic.php?id=56737&p=4
 
 ## How to use?
 Two options are possible:
-  * Building your own factory image (I've only tested on a CentOs system)
+* Building your own factory image (I've only tested on a CentOs system)
   * Clone this repo
   * Execute 'make generate'
   * Files will be available in the folder 'build/final'
