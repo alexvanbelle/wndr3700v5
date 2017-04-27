@@ -12,6 +12,8 @@ More details: https://forum.openwrt.org/viewtopic.php?id=56737&p=4
 
 ## Known issues
 * I still have reliability issues with the WiFi 5Ghz (2.4G is working well)
+* If you generate two times the factory image, you will get different sha1 for the file.
+* For an unknown reason, after using this method to switch from original firmware to lede, router fs was coming back to default lede after each reboot. To solve this issue, I've just done a sysupgrade to the original firmware of lede and everything worked like a charm.
 
 ## Content of this repository
 * build: all the scripts I've used to build the image available in the readytouse folder
@@ -21,8 +23,14 @@ More details: https://forum.openwrt.org/viewtopic.php?id=56737&p=4
 ## How to use?
 Two options are possible:
 * Building your own factory image (I've only tested on a CentOs system)
+** Clone this repo
+** Execute 'make generate'
+** Files will be available in the folder 'build/final'
 * Use the image available in this repository
+** Files are available in the folder 'readytouse'
 
+Whatever the option you have chosen, you will get a lede-17.zip that you can use on the Netgear official firmware. You will probably warned that the 'new' firmware is older than the current one: just accept.
+You might have issue with this version, please read the known issues section.
 
 ## How to contribute?
 This repository will probably become useless in few months, once the factory image is officially available. Please feel free to contribute by adding issue.
