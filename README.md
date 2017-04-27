@@ -8,6 +8,7 @@ The aim of this repository is to help people who wants to get LEDE on their WNDR
 I had a wndr3700v5 routers waiting for a long time in its box. By following the guidance of these guys (and their hard work), I've been able to use the full potential of this router.
 * Markismus
 * Francis
+
 More details: https://forum.openwrt.org/viewtopic.php?id=56737&p=4
 
 ## Known issues
@@ -22,12 +23,12 @@ More details: https://forum.openwrt.org/viewtopic.php?id=56737&p=4
 
 ## How to use?
 Two options are possible:
-* Building your own factory image (I've only tested on a CentOs system)
-** Clone this repo
-** Execute 'make generate'
-** Files will be available in the folder 'build/final'
+  * Building your own factory image (I've only tested on a CentOs system)
+  * Clone this repo
+  * Execute 'make generate'
+  * Files will be available in the folder 'build/final'
 * Use the image available in this repository
-** Files are available in the folder 'readytouse'
+  * Files are available in the folder 'readytouse'
 
 Whatever the option you have chosen, you will get a lede-17.zip that you can use on the Netgear official firmware. You will probably warned that the 'new' firmware is older than the current one: just accept.
 You might have issue with this version, please read the known issues section.
